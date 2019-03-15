@@ -1,0 +1,42 @@
+    {
+        "_id":"c-30",
+        "_parentId":"b-15",
+        "_type":"component",
+        "_component":"dialogue",
+        "_classes":"",
+        "_layout":"full",
+        "title":"Test Your Understanding",
+        "displayTitle":"Test Your Understanding",
+        "body":"Explore the scenario below, then answer the question on the subsequent pane.",
+        "instruction":"Explore the scenario below, then answer the question on the subsequent pane.",
+        "_items": [
+            {
+                "title": "Fiona",
+                "body": "<p>Fiona is an accounting lead for the 3D Print business.</p><p>She recently reported an accounting error that she noticed in her team's year-end reports. This error resulted in several hundred thousand dollars of inaccurately recorded revenue that resulted led to in an audit of her team.</p>",
+                "_graphic": {
+                    "src": "course/en/images/fiona-rev-hr-horiz.png",
+                    "alt": "Fiona character",
+                    "attribution":""
+                }
+            },
+            {
+                "title": "Jane",
+                "body": "<p>Since Fiona reported this issue to her manager, Jane, she noticed that she has not been included in certain team meetings and project status discussions. Fiona no longer feels like a valued member of the team.</p>",
+                "_graphic": {
+                    "src": "course/en/images/jane-horiz.png",
+                    "alt": "Jane character",
+                    "attribution":""
+                }
+            },
+            {
+                "title": "Narrative stage 3 title",
+                "body": "This is display text 3.",
+                "_graphic": {
+                    "src": "course/en/images/image-slider-3.jpg",
+                    "alt": "Third graphic",
+                    "attribution":"Copyright © 2015"
+                },
+                "strapline": "Third here!"
+            }
+          ]
+    }
