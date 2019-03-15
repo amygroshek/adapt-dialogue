@@ -30,45 +30,87 @@
       "help": "This is the instruction text",
       "translatable": true
     },
-    "_graphic": {
-      "type":"object",
-      "required":true,
-      "title": "Graphic",
-      "properties":{
-        "alt": {
-          "type":"string",
-          "required":false,
-          "default": "",
-          "title": "Alternative Text",
-          "inputType": "Text",
-          "validators": [],
-          "help": "The alternative text for this image",
-          "translatable": true
-        },
-        "large": {
-          "type":"string",
-          "required":true,
-          "default": "",
-          "inputType": "Asset:image",
-          "validators": ["required"],
-          "help": "The large sized image for desktop devices"
-        },
-        "small": {
-          "type":"string",
-          "required":true,
-          "default": "",
-          "inputType": "Asset:image",
-          "validators": ["required"],
-          "help": "The small sized image for mobile devices"
-        },
-        "attribution": {
-          "type":"string",
-          "required":false,
-          "default": "",
-          "inputType": "Text",
-          "validators": [],
-          "help": "Text to be displayed as an attribution",
-          "translatable": true
+    "body": {
+      "type": "string",
+      "required": false,
+      "default": "",
+      "title": "Dialogue body text",
+      "inputType": "TextArea",
+      "validators": [],
+      "help": "",
+      "translatable": true
+    },
+    "_items": {
+      "type": "array",
+      "required": false,
+      "title": "Dialogue conversation items",
+      "items": {
+        "type": "object",
+        "required": false,
+        "properties":{
+          "title": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "title": "Item title",
+            "inputType": "Text",
+            "validators": [],
+            "help": "",
+            "translatable": true
+          },
+          "body": {
+            "type": "string",
+            "required": false,
+            "default": "",
+            "title": "Item body text",
+            "inputType": "TextArea",
+            "validators": [],
+            "help": "",
+            "translatable": true
+          },
+          "_graphic": {
+            "type": "object",
+            "title": "Item graphic",
+            "properties":{
+              "src": {
+                "type": "string",
+                "required": true,
+                "default": "",
+                "title": "Select Graphic",
+                "inputType": "Asset:image",
+                "validators": ["required"],
+                "help": ""
+              },
+              "alt": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "title": "Alternative Text",
+                "inputType": "Text",
+                "validators": [],
+                "help": "Alternative text for this items image",
+                "translatable": true
+              },
+              "attribution": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "inputType": "Text",
+                "validators": [],
+                "help": "Text to be displayed as an attribution",
+                "translatable": true
+              },
+              "caption": {
+                "type": "string",
+                "required": false,
+                "default": "",
+                "inputType": "Text",
+                "validators": [],
+                "help": "Text to be displayed as a caption or image label.",
+                "translatable": true
+              }
+            }
+          }
         }
       }
     }
